@@ -1,0 +1,19 @@
+<div>
+	<div class="container">
+
+		<div id="board">
+			<table>
+				<tbody>
+				<tr ng-repeat="row in rows" id="{{'row'+$index}}">
+					<td ng-repeat="col in cols">
+						<div class="cell" id="{{$index+'-'+$parent.$index}}">
+						</div> 
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+		<button ng-click="setup()">New Game</button>
+
+	</div>
+</div>

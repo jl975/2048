@@ -1,0 +1,21 @@
+<ul id="sidebyside">
+  <li>
+    <table class="table table-striped">
+      <thead>
+        <div class="sticky-anchor"></div>
+        <tr class="statcell fixed">
+          <th>Rank</th><th>Name</th><th>Score</th><th>Highest Power</th>
+          <tr class="statcell" ng-repeat="record in retrieveRecords()">
+            <td><strong>{{ $index + 1 }}</strong></td>
+            <td>{{ record.name }}</td>
+            <td>{{ record.score }}</td>
+            <td>{{ record.highest }}</td>
+          </tr>
+        </tr>
+      </thead>
+      <tbody class="scores">
+      </tbody>
+    </table>
+  </li>
+  <li>
+</ul>

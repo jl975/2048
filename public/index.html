@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2048!!!</title>
+	<base href="/">
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<!--external CSS dependencies-->
+	<link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
+
+	<!--local CSS dependencies-->
+	<link rel="stylesheet" href="/app/main.css" />
+
+	<!--external JS dependencies-->
+	<script src="/jquery/dist/jquery.min.js"></script>
+	<script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="/angular/angular.min.js"></script>
+	<script src="/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+	<!--local JS dependencies-->
+	<script src="/app/main.js"></script>
+	<script src="/components/score/score.factory.js"></script>
+	<script src="/components/score/score.controller.js"></script>
+	<script src="/components/score/score.controller.js"></script>
+	<script src="/components/score/scoreboard.controller.js"></script>
+	<script src="/components/score/scoreboard.state.js"></script>
+	<script src="/components/board/board.directive.js"></script>
+	<script src="/components/board/board.controller.js"></script>
+	<script src="/components/board/tile.directive.js"></script>
+
+</head>
+<body ng-app="Game">
+	<div id="score" ng-controller="ScoreCtrl">
+		<h3>Score: <span>{{ score.score }}</span></h3>
+	</div>
+	<span>
+	<board></board>
+
+	<button ui-sref="scoreboard">Show Scores</button>
+	<ui-view></ui-view>
+	</span>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+#score {
+	font-size: 1.5em;
+	margin: 20px;
+}
+
+#board {
+	border-radius: 5px;
+	background: #bbb;
+	padding: 5px;
+	display: inline-block;
+	opacity: 1;
+
+}
+
+
+.cell {
+	background-color: #ccc;
+	width: 50px;
+	height: 50px;
+	border-radius: 3px;
+	margin: 5px;
+}
+
+tile {
+	background-color: white;
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
+}
+
+
+.tile {
+	background-color: white;
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
+}
+
+
+
+.tile.num-2 {
+	background-color: #aaeeff;
+}
+.tile.num-4 {
+	background-color: #eeaaff;
+}
+.tile.num-8 {
+	background-color: #ccffbb;
+}
+.tile.num-16 {
+	background-color: #d2b48c;
+}
+.tile.num-32 {
+	background-color: #f5deb3;
+}
+.tile.num-64 {
+	background-color: #cd5c5c;
+}
+.tile.num-128 {
+	background-color: #9acd32;
+}
+.tile.num-256 {
+	background-color: #5f92a0;
+}
+.tile.num-512 {
+	background-color: #8fbc8f;
+}
+.tile.num-1024 {
+	background-color: #d8bfd8;
+}
+.tile.num-2048 {
+	background-color: #ffebcd;
+}
+.tile.num-4096 {
+	background-color: #ffebcd;
+}
+
+.tile .numtext {
+	font-size: 35px;
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	vertical-align: middle;
+	font-family: tahoma;
+	font-weight: 600;
+}
+.tile .numtext.digit1 {
+	font-size: 35px;
+}
+.tile .numtext.digit2 {
+	font-size: 30px;
+}
+.tile .numtext.digit3 {
+	font-size: 25px;
+}
+.tile .numtext.digit4 {
+	font-size: 18px;
+}
+
+#sidebyside {
+	padding: 0;
+}
+
+#sidebyside li {
+	display: inline-block;
+	margin: 0 20px;
+	padding: 0;
+}
+
+.stattable {
+	display: none;
+	margin: 0;
+	float: left;
+}
+
+.statcell th, td {
+	text-align: center;
+	padding: 3px 0;
+	margin: 0;
+}
+
+
